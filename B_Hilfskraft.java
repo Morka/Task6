@@ -14,7 +14,7 @@ public class B_Hilfskraft extends Bediener {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Hilfskraft, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Hilfskraft, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 }

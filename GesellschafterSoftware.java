@@ -4,15 +4,15 @@
 
 public class GesellschafterSoftware extends Software {
 	public String toString() {
-		return "Hilfskraft-Software";
+		return "Gesellschafter-Software";
 	}
 	
 	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
-		android.software = this;
+		android.setSoftware(this);
 	}
 	
 	public void vonHilfskraftBenutzt(B_Hilfskraft android) {
-		android.software = null;
+		android.setSoftware(null);
 	}
 	
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {

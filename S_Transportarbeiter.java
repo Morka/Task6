@@ -15,7 +15,7 @@ public class S_Transportarbeiter extends Schwerarbeiter {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Transportarbeiter, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Transportarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 }

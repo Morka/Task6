@@ -15,7 +15,7 @@ public class S_ServiceTechniker extends Schwerarbeiter {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Servicetechniker, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Servicetechniker, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 	

@@ -14,7 +14,7 @@ public class B_Gesellschafter extends Bediener {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Gesellschafter, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Gesellschafter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 }

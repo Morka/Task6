@@ -8,11 +8,11 @@ public class HilfskraftSoftware extends Software {
 	}
 	
 	public void vonHilfskraftBenutzt(B_Hilfskraft android) {
-		android.software = this;		
+		android.setSoftware(this);		
 	}
 	
 	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
-		android.software = null;
+		android.setSoftware(null);
 	}
 	
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {

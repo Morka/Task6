@@ -15,7 +15,7 @@ public class G_Objektbewacher extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Objektbewacher, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Objektbewacher, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 	

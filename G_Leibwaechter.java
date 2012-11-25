@@ -15,7 +15,7 @@ public class G_Leibwaechter extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Leibwaechter, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Leibwaechter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 }

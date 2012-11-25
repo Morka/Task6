@@ -15,7 +15,7 @@ public class G_Kaempfer extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Kaempfer, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Kaempfer, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 	

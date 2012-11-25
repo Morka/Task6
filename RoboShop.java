@@ -1,31 +1,28 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 
 /**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
 public class RoboShop {
-	ArrayList<Android> list;
+	HashMap<Integer,Android> map;
 	
 	RoboShop() {
-		list = new ArrayList<Android>();
+		map = new HashMap<Integer,Android>();
 	}
 	
 	
 	
 	public void insert(Android android) {
 		if(android.getSoftware() != null) //&& android.getSkin() != null && android.getLeistung != null
-			list.add(android);
+			map.put(android.getSNumber(), android.deliverAndroid());
 	}
 	
 	public String find(int snr) {
+		Android droid;
+		if((droid = map.get(snr)) != null)
+			return droid.toString();
 		
-		return null;
-	}
-	
-	public Iterator<Android> iterator() {
-		return list.iterator();
-	}
-	
+		return "null";
+	}	
 }

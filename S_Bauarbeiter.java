@@ -15,7 +15,7 @@ public class S_Bauarbeiter extends Schwerarbeiter {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Bauarbeiter, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		ret = "Bauarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
 }
