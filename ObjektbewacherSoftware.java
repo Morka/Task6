@@ -2,7 +2,7 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public class GesellschafterSoftware extends Software {
+public class ObjektbewacherSoftware extends Software {
 	void vonHilfskraftBenutzt(B_Hilfskraft android) {
 		
 	}

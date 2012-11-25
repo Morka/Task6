@@ -2,6 +2,6 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public class B_Gesellschafter extends Bediener {
+public class Stufe5 extends Security {
 	
 }
