@@ -3,36 +3,40 @@
  */
 
 public class HilfskraftSoftware extends Software {
-	void vonHilfskraftBenutzt(B_Hilfskraft android) {
+	public String toString() {
+		return "Hilfskraft-Software";
+	}
+	
+	public void vonHilfskraftBenutzt(B_Hilfskraft android) {
+		android.software = this;		
+	}
+	
+	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
+		android.software = null;
+	}
+	
+	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
 		
 	}
 	
-	void vonGesellschafteBenutzt(B_Gesellschafter android) {
+	public void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
 		
 	}
 	
-	void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
+	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
 		
 	}
 	
-	void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
+	public void vonObjektbewacherBenutzt(G_Objektbewacher android) {
 		
 	}
 	
-	void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
-		
-	}
-	
-	void vonObjektbewacherBenutzt(G_Objektbewacher android) {
-		
-	}
-	
-	void vonLeibwaechterBenutzt(G_Leibwaechter android) {
+	public void vonLeibwaechterBenutzt(G_Leibwaechter android) {
 		
 	}
 	
 	
-	void vonKaempferBenutzt(G_Kaempfer android) {
+	public void vonKaempferBenutzt(G_Kaempfer android) {
 		
 	}
 }

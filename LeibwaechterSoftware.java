@@ -3,11 +3,15 @@
  */
 
 public class LeibwaechterSoftware extends Software {
+	public String toString() {
+		return "Leibwaechter-Software";
+	}
+	
 	void vonHilfskraftBenutzt(B_Hilfskraft android) {
 		
 	}
 	
-	void vonGesellschafteBenutzt(B_Gesellschafter android) {
+	void vonGesellschafterBenutzt(B_Gesellschafter android) {
 		
 	}
 	

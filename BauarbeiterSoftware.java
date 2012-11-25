@@ -3,11 +3,15 @@
  */
 
 public class BauarbeiterSoftware extends Software {
+	public String toString() {
+		return "Bauarbeiter-Software";
+	}
+	
 	void vonHilfskraftBenutzt(B_Hilfskraft android) {
 		
 	}
 	
-	void vonGesellschafteBenutzt(B_Gesellschafter android) {
+	void vonGesellschafterBenutzt(B_Gesellschafter android) {
 		
 	}
 	

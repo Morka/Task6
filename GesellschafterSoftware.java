@@ -3,36 +3,39 @@
  */
 
 public class GesellschafterSoftware extends Software {
-	void vonHilfskraftBenutzt(B_Hilfskraft android) {
-		
+	public String toString() {
+		return "Hilfskraft-Software";
 	}
 	
-	void vonGesellschafteBenutzt(B_Gesellschafter android) {
-		
+	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
+		android.software = this;
 	}
 	
-	void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
-		
+	public void vonHilfskraftBenutzt(B_Hilfskraft android) {
+		android.software = null;
 	}
 	
-	void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
-		
+	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
+		//android.software = null;		
 	}
 	
-	void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
-		
+	public void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
+		//android.software = null;		
 	}
 	
-	void vonObjektbewacherBenutzt(G_Objektbewacher android) {
-		
+	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
+		//android.software = null;		
 	}
 	
-	void vonLeibwaechterBenutzt(G_Leibwaechter android) {
-		
+	public void vonObjektbewacherBenutzt(G_Objektbewacher android) {
+		//android.software = null;		
 	}
 	
+	public void vonLeibwaechterBenutzt(G_Leibwaechter android) {
+		//android.software = null;		
+	}
 	
-	void vonKaempferBenutzt(G_Kaempfer android) {
-		
+	public void vonKaempferBenutzt(G_Kaempfer android) {
+		//android.software = null;		
 	}
 }

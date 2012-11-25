@@ -3,11 +3,15 @@
  */
 
 public class KaempferSoftware extends Software {
+	public String toString() {
+		return "Kaempfer-Software";
+	}
+	
 	void vonHilfskraftBenutzt(B_Hilfskraft android) {
 		
 	}
 	
-	void vonGesellschafteBenutzt(B_Gesellschafter android) {
+	void vonGesellschafterBenutzt(B_Gesellschafter android) {
 		
 	}
 	

@@ -3,5 +3,20 @@
  */
 
 public class G_Kaempfer extends Guardian {
+
+	public G_Kaempfer(int snr, Skin skin, Software software) {
+		super(snr, skin, software);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void benutzeSoftware(Software software) {
+		software.vonKaempferBenutzt(this);
+	}
+	
+	public String toString() {
+		String ret = "";
+		ret = "Kaempfer, Nr: " + this.snr + " , Skin: " + this.skin + " , Software: " + this.software;
+		return ret;
+	}
 	
 }
