@@ -30,6 +30,10 @@ public abstract class Android {
 		this.software = software;
 	}
 	
+	protected void setSkin(Skin skin) {
+		this.skin = skin;
+	}
+	
 	public Software getSoftware() {
 		return software;
 	}
