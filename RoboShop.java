@@ -14,8 +14,11 @@ public class RoboShop {
 	
 	
 	public void insert(Android android) {
-		if(android.getSoftware() != null) //&& android.getSkin() != null && android.getLeistung != null
-			map.put(android.getSNumber(), android.deliverAndroid());
+		Android delivery = android.deliverAndroid();
+		if(delivery != null)
+			map.put(delivery.getSNumber(), delivery);
+		else
+			System.out.println("Fehler bei Androidauslieferung");
 	}
 	
 	public String find(int snr) {

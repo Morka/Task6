@@ -20,8 +20,14 @@ public abstract class Android {
 	}
 	
 	public Android deliverAndroid() {
-		stack.add(this);
-		return this;
+		
+		if(getSoftware() != null)  //&& getSkin() != null && getLeistung() != null 
+		{
+				stack.add(this);
+				return this;
+		}
+		
+		return null;
 	}
 	
 	public abstract void benutzeSoftware(Software software);
