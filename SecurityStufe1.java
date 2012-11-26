@@ -14,21 +14,21 @@ public class SecurityStufe1 extends Security{
 		android.setSecurity(this);
 	}
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
-
+		android.setSecurity(null);
 	}
 	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
-	
+		android.setSecurity(null);
 	}
 	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android){
-	
+		android.setSecurity(null);
 	}
 	public void vonObjektbewacherBenutzt(G_Objektbewacher android){
-	
+		android.setSecurity(null);
 	}
 	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
-	
+		android.setSecurity(null);
 	}
 	public void vonKaempferBenutzt(G_Kaempfer android){
-	
+		android.setSecurity(null);
 	}
 }

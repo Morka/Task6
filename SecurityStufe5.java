@@ -6,28 +6,29 @@ public class SecurityStufe5 extends Security{
 	public String toString(){
 		return "Security Stufe 5";
 	}
-	public void vonHilfskraftBenutzt(B_Hilfskraft android){
-
-	}
-	public void vonGesellschafterBenutzt(B_Gesellschafter android){
-	
-	}
-	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
-	
-	}
-	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
-	
-	}
-	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android){
-	
-	}
-	public void vonObjektbewacherBenutzt(G_Objektbewacher android){
-	
-	}
-	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
-	
-	}
 	public void vonKaempferBenutzt(G_Kaempfer android){
 		android.setSecurity(this);
+	}
+	
+	public void vonHilfskraftBenutzt(B_Hilfskraft android){
+		android.setSecurity(null);
+	}
+	public void vonGesellschafterBenutzt(B_Gesellschafter android){
+		android.setSecurity(null);
+	}
+	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
+		android.setSecurity(null);
+	}
+	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
+		android.setSecurity(null);
+	}
+	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android){
+		android.setSecurity(null);
+	}
+	public void vonObjektbewacherBenutzt(G_Objektbewacher android){
+		android.setSecurity(null);
+	}
+	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
+		android.setSecurity(null);
 	}
 }

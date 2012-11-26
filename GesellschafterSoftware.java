@@ -16,26 +16,26 @@ public class GesellschafterSoftware extends Software {
 	}
 	
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
-		//android.software = null;		
+		android.setSoftware(null);		
 	}
 	
 	public void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
-		//android.software = null;		
+		android.setSoftware(null);	
 	}
 	
 	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
-		//android.software = null;		
+		android.setSoftware(null);		
 	}
 	
 	public void vonObjektbewacherBenutzt(G_Objektbewacher android) {
-		//android.software = null;		
+		android.setSoftware(null);		
 	}
 	
 	public void vonLeibwaechterBenutzt(G_Leibwaechter android) {
-		//android.software = null;		
+		android.setSoftware(null);	
 	}
 	
 	public void vonKaempferBenutzt(G_Kaempfer android) {
-		//android.software = null;		
+		android.setSoftware(null);	
 	}
 }

@@ -7,12 +7,6 @@ public class SecurityStufe4 extends Security{
 		return "Security Stufe 4";
 	}
 	
-	public void vonHilfskraftBenutzt(B_Hilfskraft android){
-
-	}
-	public void vonGesellschafterBenutzt(B_Gesellschafter android){
-	
-	}
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
 		android.setSecurity(this);
 	}
@@ -28,7 +22,15 @@ public class SecurityStufe4 extends Security{
 	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
 		android.setSecurity(this);
 	}
-	public void vonKaempferBenutzt(G_Kaempfer android){
 	
+	public void vonHilfskraftBenutzt(B_Hilfskraft android){
+		android.setSecurity(null);
+	}
+	public void vonGesellschafterBenutzt(B_Gesellschafter android){
+		android.setSecurity(null);
+	}
+	
+	public void vonKaempferBenutzt(G_Kaempfer android){
+		android.setSecurity(null);
 	}
 }
