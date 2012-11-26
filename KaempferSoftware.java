@@ -7,36 +7,36 @@ public class KaempferSoftware extends Software {
 		return "Kaempfer-Software";
 	}
 	
-	void vonHilfskraftBenutzt(B_Hilfskraft android) {
+	public void vonHilfskraftBenutzt(B_Hilfskraft android) {
 		
 	}
 	
-	void vonGesellschafterBenutzt(B_Gesellschafter android) {
+	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
 		
 	}
 	
-	void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
+	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
 		
 	}
 	
-	void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
+	public void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
 		
 	}
 	
-	void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
+	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
 		
 	}
 	
-	void vonObjektbewacherBenutzt(G_Objektbewacher android) {
+	public void vonObjektbewacherBenutzt(G_Objektbewacher android) {
 		
 	}
 	
-	void vonLeibwaechterBenutzt(G_Leibwaechter android) {
+	public void vonLeibwaechterBenutzt(G_Leibwaechter android) {
 		
 	}
 	
 	
-	void vonKaempferBenutzt(G_Kaempfer android) {
+	public void vonKaempferBenutzt(G_Kaempfer android) {
 		
 	}
 }
