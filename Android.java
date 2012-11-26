@@ -10,11 +10,13 @@ public abstract class Android {
 	private final int snr;
 	private Skin skin;
 	private Software software;
+	private Leistung leistung;
 	
 	public Android(int snr, Skin skin, Software software) {
 		this.snr = snr;
 		
 		this.benutzeSoftware(software);
+		//this.benutzeLeistung(leistung);
 		//this.benutzeSkin(Skin);
 		
 	}
@@ -29,11 +31,19 @@ public abstract class Android {
 		
 		return null;
 	}
-	
+		
 	public abstract void benutzeSoftware(Software software);
 	
 	protected void setSoftware(Software software) {
 		this.software = software;
+	}
+	
+	//public abstract void benutzeSecurity(Security security);
+	
+	//public abstract void benutzeLeistung(Leistung leistung);
+
+	protected void setLeistung(Leistung leistung){
+		this.leistung = leistung;
 	}
 	
 	protected void setSkin(Skin skin) {
