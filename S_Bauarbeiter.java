@@ -18,4 +18,10 @@ public class S_Bauarbeiter extends Schwerarbeiter {
 		ret = "Bauarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonBauarbeiterBenutzt(this);
+		
+	}
 }

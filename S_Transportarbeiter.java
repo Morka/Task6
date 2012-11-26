@@ -18,4 +18,10 @@ public class S_Transportarbeiter extends Schwerarbeiter {
 		ret = "Transportarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonTransportarbeiterBenutzt(this);
+		
+	}
 }

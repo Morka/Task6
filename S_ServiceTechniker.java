@@ -18,5 +18,11 @@ public class S_ServiceTechniker extends Schwerarbeiter {
 		ret = "Servicetechniker, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonServicetechnikerBenutzt(this);
+		
+	}
 	
 }

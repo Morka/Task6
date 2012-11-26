@@ -17,4 +17,10 @@ public class B_Gesellschafter extends Bediener {
 		ret = "Gesellschafter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonGesellschafterBenutzt(this);
+		
+	}
 }
