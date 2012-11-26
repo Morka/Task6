@@ -18,5 +18,11 @@ public class G_Kaempfer extends Guardian {
 		ret = "Kaempfer, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonKaempferBenutzt(this);
+		
+	}
 	
 }

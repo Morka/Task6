@@ -42,6 +42,8 @@ public abstract class Android {
 	
 	//public abstract void benutzeLeistung(Leistung leistung);
 
+	public abstract void benutzeSkin(Skin skin);
+
 	protected void setLeistung(Leistung leistung){
 		this.leistung = leistung;
 	}
@@ -53,8 +55,6 @@ public abstract class Android {
 	public Software getSoftware() {
 		return software;
 	}
-	
-	//public abstract void benutzeSkin(Skin skin);
 	
 	/*public Skin getSkin() {
 		return skin;

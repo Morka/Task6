@@ -18,5 +18,11 @@ public class G_Objektbewacher extends Guardian {
 		ret = "Objektbewacher, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonObjektbewacherBenutzt(this);
+		
+	}
 	
 }

@@ -18,4 +18,10 @@ public class G_Leibwaechter extends Guardian {
 		ret = "Leibwaechter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonLeibwaechterBenutzt(this);
+		
+	}
 }
