@@ -8,19 +8,19 @@ public class SecurityStufe3 extends Security{
 	}
 	
 	public void vonHilfskraftBenutzt(B_Hilfskraft android){
-		android.setSecurity(this);
+
 	}
 	public void vonGesellschafterBenutzt(B_Gesellschafter android){
 	
 	}
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
-	
+		android.setSecurity(this);
 	}
 	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
-	
+		android.setSecurity(this);
 	}
 	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android){
-	
+		android.setSecurity(this);
 	}
 	public void vonObjektbewacherBenutzt(G_Objektbewacher android){
 	

@@ -7,7 +7,7 @@ public class SecurityStufe5 extends Security{
 		return "Security Stufe 5";
 	}
 	public void vonHilfskraftBenutzt(B_Hilfskraft android){
-		android.setSecurity(this);
+
 	}
 	public void vonGesellschafterBenutzt(B_Gesellschafter android){
 	
@@ -28,6 +28,6 @@ public class SecurityStufe5 extends Security{
 	
 	}
 	public void vonKaempferBenutzt(G_Kaempfer android){
-	
+		android.setSecurity(this);
 	}
 }

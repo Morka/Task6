@@ -11,10 +11,10 @@ public class SecurityStufe1 extends Security{
 		android.setSecurity(this);
 	}
 	public void vonGesellschafterBenutzt(B_Gesellschafter android){
-	
+		android.setSecurity(this);
 	}
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
-	
+
 	}
 	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
 	
