@@ -21,4 +21,10 @@ public class B_Hilfskraft extends Bediener {
 		ret = "Hilfskraft, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
+
+	@Override
+	public void benutzeSkin(Skin skin) {
+		skin.vonHilfskraftBenutzt(this);
+		
+	}
 }
