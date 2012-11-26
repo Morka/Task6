@@ -11,6 +11,7 @@ public abstract class Android {
 	private Skin skin;
 	private Software software;
 	private Leistung leistung;
+	private Security security;
 	
 	public Android(int snr, Skin skin, Software software) {
 		this.snr = snr;
@@ -38,7 +39,11 @@ public abstract class Android {
 		this.software = software;
 	}
 	
-	//public abstract void benutzeSecurity(Security security);
+	public abstract void benutzeSecurity(Security security);
+	
+	protected void setSecurity(Security security){
+		this.security = security;
+	}
 	
 	//public abstract void benutzeLeistung(Leistung leistung);
 

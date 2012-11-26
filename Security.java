@@ -4,12 +4,12 @@
 
 public abstract class Security {	
 	public abstract String toString();
-	public abstract void vonHilfskraftSoftwareBenutzt(HilfskraftSoftware software);
-	public abstract void vonGesellschafterSoftwareBenutzt(GesellschafterSoftware software);
-	public abstract void vonBauarbeiterSoftwareBenutzt(BauarbeiterSoftware software);
-	public abstract void vonServiceTechnikerSoftwareBenutzt(ServiceTechnikerSoftware software);
-	public abstract void vonTransportarbeiterSoftwareBenutzt(TransportarbeiterSoftware software);
-	public abstract void vonObjektbewacherSoftwareBenutzt(ObjektbewacherSoftware software);
-	public abstract void vonLeibwaechterSoftwareBenutzt(LeibwaechterSoftware software);
-	public abstract void vonKaempferSoftwareBenutzt(KaempferSoftware software);
+	public abstract void vonHilfskraftBenutzt(B_Hilfskraft android);
+	public abstract void vonGesellschafterBenutzt(B_Gesellschafter android);
+	public abstract void vonBauarbeiterBenutzt(S_Bauarbeiter android);
+	public abstract void vonServiceTechnikerBenutzt(S_ServiceTechniker android);
+	public abstract void vonTransportarbeiterBenutzt(S_Transportarbeiter android);
+	public abstract void vonObjektbewacherBenutzt(G_Objektbewacher android);
+	public abstract void vonLeibwaechterBenutzt(G_Leibwaechter android);
+	public abstract void vonKaempferBenutzt(G_Kaempfer android);
 }

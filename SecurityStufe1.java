@@ -7,28 +7,28 @@ public class SecurityStufe1 extends Security{
 		return "Security Stufe 1";
 	}
 	
-	public void vonHilfskraftSoftwareBenutzt(HilfskraftSoftware software){
+	public void vonHilfskraftBenutzt(B_Hilfskraft android){
+		android.setSecurity(this);
+	}
+	public void vonGesellschafterBenutzt(B_Gesellschafter android){
 	
 	}
-	public void vonGesellschafterSoftwareBenutzt(GesellschafterSoftware software){
+	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
 	
 	}
-	public void vonBauarbeiterSoftwareBenutzt(BauarbeiterSoftware software){
+	public void vonServiceTechnikerBenutzt(S_ServiceTechniker android){
 	
 	}
-	public void vonServiceTechnikerSoftwareBenutzt(ServiceTechnikerSoftware software){
+	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android){
 	
 	}
-	public void vonTransportarbeiterSoftwareBenutzt(TransportarbeiterSoftware software){
+	public void vonObjektbewacherBenutzt(G_Objektbewacher android){
 	
 	}
-	public void vonObjektbewacherSoftwareBenutzt(ObjektbewacherSoftware software){
+	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
 	
 	}
-	public void vonLeibwaechterSoftwareBenutzt(LeibwaechterSoftware software){
-	
-	}
-	public void vonKaempferSoftwareBenutzt(KaempferSoftware software){
+	public void vonKaempferBenutzt(G_Kaempfer android){
 	
 	}
 }

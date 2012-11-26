@@ -12,6 +12,10 @@ public class B_Hilfskraft extends Bediener {
 		software.vonHilfskraftBenutzt(this);
 	}
 	
+	public void benutzeSecurity(Security security){
+		security.vonHilfskraftBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Hilfskraft, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
