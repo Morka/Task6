@@ -13,6 +13,10 @@ public class G_Leibwaechter extends Guardian {
 		software.vonLeibwaechterBenutzt(this);
 	}
 	
+	public void benutzeSecurity(Security security){
+		security.vonLeibwaechterBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Leibwaechter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();

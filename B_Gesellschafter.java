@@ -12,6 +12,11 @@ public class B_Gesellschafter extends Bediener {
 		software.vonGesellschafterBenutzt(this);
 	}
 	
+	
+	public void benutzeSecurity(Security security){
+		security.vonGesellschafterBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Gesellschafter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();

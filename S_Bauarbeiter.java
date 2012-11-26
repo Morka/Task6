@@ -13,6 +13,10 @@ public class S_Bauarbeiter extends Schwerarbeiter {
 		software.vonBauarbeiterBenutzt(this);
 	}
 	
+	public void benutzeSecurity(Security security){
+		security.vonBauarbeiterBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Bauarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();

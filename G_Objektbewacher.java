@@ -1,16 +1,20 @@
 /**
- * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
- */
+* @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+*/
 
 public class G_Objektbewacher extends Guardian {
-
+	
 	public G_Objektbewacher(int snr, Skin skin, Software software) {
 		super(snr, skin, software);
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	public void benutzeSoftware(Software software) {
 		software.vonObjektbewacherBenutzt(this);
+	}
+	
+	public void benutzeSecurity(Security security){
+		security.vonObjektbewacherBenutzt(this);
 	}
 	
 	public String toString() {
@@ -18,7 +22,7 @@ public class G_Objektbewacher extends Guardian {
 		ret = "Objektbewacher, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
 		return ret;
 	}
-
+	
 	@Override
 	public void benutzeSkin(Skin skin) {
 		skin.vonObjektbewacherBenutzt(this);

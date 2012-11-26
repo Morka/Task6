@@ -13,6 +13,10 @@ public class S_ServiceTechniker extends Schwerarbeiter {
 		software.vonServicetechnikerBenutzt(this);
 	}
 	
+	public void benutzeSecurity(Security security){
+		security.vonServiceTechnikerBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Servicetechniker, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();

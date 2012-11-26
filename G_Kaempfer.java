@@ -13,6 +13,11 @@ public class G_Kaempfer extends Guardian {
 		software.vonKaempferBenutzt(this);
 	}
 	
+	
+	public void benutzeSecurity(Security security){
+		security.vonKaempferBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Kaempfer, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();

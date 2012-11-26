@@ -13,6 +13,10 @@ public class S_Transportarbeiter extends Schwerarbeiter {
 		software.vonTransportarbeiterBenutzt(this);
 	}
 	
+	public void benutzeSecurity(Security security){
+		security.vonTransportarbeiterBenutzt(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Transportarbeiter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
