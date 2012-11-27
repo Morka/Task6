@@ -26,6 +26,6 @@ public class RoboShop {
 		if((droid = map.get(snr)) != null)
 			return droid.toString();
 		
-		return "null";
+		return "Androide mit der Seriennummer " + snr + " nicht gefunden";
 	}	
 }
