@@ -3,40 +3,40 @@
 */
 
 public class Leistung10KW extends Leistung{
-	/*public String toString(){
-		return "1KW Leistung";
+	public void vonHilfskraftBenutzt(HilfskraftSoftware software){
+
 	}
 	
-	public void vonHilfskraftBenutzt(B_Hilfskraft android){
-		android.setLeistung(this);
+	public void vonGesellschafterBenutzt(GesellschafterSoftware software) {
+
 	}
 	
-	public void vonGesellschafterBenutzt(B_Gesellschafter android) {
-		android.setLeistung(this);
-	}
-	
-	public void vonBauarbeiterBenutzt(S_Bauarbeiter android) {
+	public void vonBauarbeiterBenutzt(BauarbeiterSoftware software) {
 		
 	}
 	
-	public void vonServicetechnikerBenutzt(S_ServiceTechniker android) {
+	public void vonServicetechnikerBenutzt(ServiceTechnikerSoftware software) {
 		
 	}
 	
-	public void vonTransportarbeiterBenutzt(S_Transportarbeiter android) {
+	public void vonTransportarbeiterBenutzt(TransportarbeiterSoftware software) {
 		
 	}
 	
-	public void vonObjektbewacherBenutzt(G_Objektbewacher android) {
+	public void vonObjektbewacherBenutzt(ObjektbewacherSoftware software) {
 		
 	}
 	
-	public void vonLeibwaechterBenutzt(G_Leibwaechter android) {
+	public void vonLeibwaechterBenutzt(LeibwaechterSoftware software) {
 		
 	}
 	
 	
-	public void vonKaempferBenutzt(G_Kaempfer android) {
-		
-	}*/
+	public void vonKaempferBenutzt(KaempferSoftware software) {
+		software.setLeistung(this)
+	}
+	
+	public String toString(){
+		return "10KW Leistung";
+	}
 }

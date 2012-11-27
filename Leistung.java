@@ -3,13 +3,13 @@
  */
 
 public abstract class Leistung{
-	/*abstract void vonHilfskraftBenutzt(B_Hilfskraft android);
-	abstract void vonGesellschafterBenutzt(B_Gesellschafter android);
-	abstract void vonBauarbeiterBenutzt(S_Bauarbeiter android);
-	abstract void vonServicetechnikerBenutzt(S_ServiceTechniker android);
-	abstract void vonTransportarbeiterBenutzt(S_Transportarbeiter android);
-	abstract void vonObjektbewacherBenutzt(G_Objektbewacher android);
-	abstract void vonLeibwaechterBenutzt(G_Leibwaechter android);
-	abstract void vonKaempferBenutzt(G_Kaempfer android);
-	public abstract String toString();*/
+	abstract void vonHilfskraftBenutzt(HilfskraftSoftware software);
+	abstract void vonGesellschafterBenutzt(GesellschafterSoftware software);
+	abstract void vonBauarbeiterBenutzt(BauarbeiterSoftware software);
+	abstract void vonServicetechnikerBenutzt(ServiceTechnikerSoftware software);
+	abstract void vonTransportarbeiterBenutzt(TransportarbeiterSoftware software);
+	abstract void vonObjektbewacherBenutzt(ObjektbewacherSoftware software);
+	abstract void vonLeibwaechterBenutzt(LeibwaechterSoftware software);
+	abstract void vonKaempferBenutzt(KaempferSoftware software);
+	public abstract String toString();
 }
