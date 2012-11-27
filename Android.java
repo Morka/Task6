@@ -29,6 +29,7 @@ public abstract class Android {
 		
 		return null;
 	}
+	public abstract void changeTyp(Android android);
 	
 	public Android changeAndroid(Android android){
 		if(android != null){
@@ -80,6 +81,14 @@ public abstract class Android {
 	public abstract void benutzeSoftware(Software software);
 	public abstract void benutzeSecurity(Security security);
 	public abstract void benutzeSkin(Skin skin);
+	public abstract void aufGesellschafterWechseln(Android android);
+	public abstract void aufHilfskraftWechseln(Android android);
+	public abstract void aufKaempferWechseln(Android android);
+	public abstract void aufLeibwaechterWechseln(Android android);
+	public abstract void aufObjektbewacherWechseln(Android android);
+	public abstract void aufBauarbeiterWechseln(Android android);
+	public abstract void aufServiceTechnikerWechseln(Android android);
+	public abstract void aufTransportarbeiterWechseln(Android android);
 	
 	public String toString(){
 		String ret = "";

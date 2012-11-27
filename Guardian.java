@@ -19,7 +19,7 @@ public abstract class Guardian extends Android {
 		android = new G_Kaempfer(android.getSNumber(), android.getSkin(), android.getSoftware(), android.getSecurity(), android.getSecurity().getLeistung()); 
 		
 	}
-	public void aufLeibwaechterWechseln(Android android{
+	public void aufLeibwaechterWechseln(Android android){
 		android = new G_Leibwaechter(android.getSNumber(), android.getSkin(), android.getSoftware(), android.getSecurity(), android.getSecurity().getLeistung()); 
 	
 	}

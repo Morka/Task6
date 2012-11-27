@@ -19,7 +19,7 @@ public abstract class Schwerarbeiter extends Android {
 	public void aufKaempferWechseln(Android android){
 		
 	}
-	public void aufLeibwaechterWechseln(Android android{
+	public void aufLeibwaechterWechseln(Android android){
 	
 	}
 	public void aufObjektbewacherWechseln(Android android){
