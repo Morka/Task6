@@ -56,14 +56,24 @@ public class Test {
 		S_ServiceTechniker a15 = new S_ServiceTechniker(15, highDensitySkin, serviceSoft, sec3, power5);
 		S_Transportarbeiter a16 = new S_Transportarbeiter(16, highDensitySkin, cargoSoft, sec4, power10);
 		
-		//Initiliaze a bad fighter unit
-		G_Kaempfer badFighter = new G_Kaempfer(17, touchSkin, serviceSoft, sec3, power5);
+		//Initiliaze a bad fighter unit with parts
+		Skin tmpTouchSkin = new BeruehrungssensitivSkin();
+		Software tmpServiceSoft = new ServiceTechnikerSoftware();
+		Security tmpSec3 = new SecurityStufe3();
+		Leistung tmpPower5 = new Leistung5KW();
+		
+		G_Kaempfer badFighter = new G_Kaempfer(17, tmpTouchSkin, tmpServiceSoft, tmpSec3, tmpPower5);
 		
 		//Update unit 16 with proper settings
 		S_Transportarbeiter newA16 = new S_Transportarbeiter(16, highDensitySkin, cargoSoft, sec3, power5); //new Unit 16 - OK!
 		
 		//Update unit 8 with false settings
-		//Android newA8 = new S_Transportarbeiter(8, highDensitySkin, cargoSoft, sec3, power10);//new Unit 8 - BAD!
+		Skin tmpDensitySkin = new HochfesteSkin();
+		Software tmpCarSoftware = new TransportarbeiterSoftware();
+		Security tmpSecu3 = new SecurityStufe3();
+		Leistung tmpPower10 = new Leistung10KW();
+		
+		Android newA8 = new S_Transportarbeiter(8, tmpDensitySkin, tmpCarSoftware, tmpSecu3, tmpPower10);//new Unit 8 - BAD!
 		
 		//Add all androids into the RoboShop list
 		shop.insert(a1);
@@ -84,7 +94,7 @@ public class Test {
 		shop.insert(a16);
 		shop.insert(badFighter);
 		shop.insert(newA16);
-		//shop.insert(newA8);
+		shop.insert(newA8);
 		
 		//Print all androids in the list
 		System.out.println(shop.find(1));
