@@ -2,11 +2,8 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-import java.util.Iterator;
-import java.util.Stack;
 
 public abstract class Android {
-	private Stack<Android> stack = new Stack<Android>();
 	private final int snr;
 	private Skin skin;
 	private Software software;
@@ -27,11 +24,19 @@ public abstract class Android {
 		
 		if((getSoftware() != null) && (getSkin() != null)  && (security.getLeistung() != null )  && (getSecurity() != null))
 		{
-				stack.add(this);
 				return this;
 		}
 		
 		return null;
+	}
+	
+	public Android changeAndroid(Android android){
+		if(android != null){
+			this.setSkin(android.getSkin());
+			this.getSecurity().setLeistung(android.getSecurity().getLeistung());
+		}
+		
+		return this;
 	}
 			
 	protected void setSoftware(Software software) {
@@ -65,10 +70,10 @@ public abstract class Android {
 		return snr;
 	}
 	
-	
+	/*
 	public Iterator<Android> iterator() {
 		return stack.iterator();
-	}
+	}*/
 	
 	
 	public abstract void benutzeSoftware(Software software);

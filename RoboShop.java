@@ -1,24 +1,42 @@
 import java.util.HashMap;
+import java.util.Stack;
+import java.util.Iterator;
+
 
 /**
- * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
- */
+* @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+*/
 
 public class RoboShop {
-	HashMap<Integer,Android> map;
+	private HashMap<Integer,Android> map;
+	private Stack<Android> stack;
+	
 	
 	RoboShop() {
 		map = new HashMap<Integer,Android>();
+		stack = new Stack<Android>();
 	}
 	
 	
 	
 	public void insert(Android android) {
-		Android delivery = android.deliverAndroid();
-		if(delivery != null)
+		Android delivery;
+		if((delivery = findAndroid(android.getSNumber())) == null){
+			delivery = android.deliverAndroid();
+		}else{
+			delivery.changeAndroid(android.deliverAndroid());
+			delivery = delivery.deliverAndroid();
+		}
+		if(delivery != null){
 			map.put(delivery.getSNumber(), delivery);
+			stack.add(delivery);
+		}
 		else
 			System.out.println("Fehler bei Androidauslieferung");
+	}
+	
+	private Android findAndroid(int snr){
+		return map.get(snr);
 	}
 	
 	public String find(int snr) {
@@ -28,4 +46,8 @@ public class RoboShop {
 		
 		return "Androide mit der Seriennummer " + snr + " nicht gefunden";
 	}	
+	
+	public Iterator<Android> iterator(){
+		return stack.iterator();
+	}
 }
