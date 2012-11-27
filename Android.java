@@ -35,7 +35,7 @@ public abstract class Android {
 	}
 			
 	protected void setSoftware(Software software) {
-		this.benutzeSoftware(software);
+		this.software = software;
 	}
 	protected Software getSoftware() {
 		return software;
@@ -43,19 +43,19 @@ public abstract class Android {
 	
 	
 	protected void setSecurity(Security security){
-		this.benutzeSecurity(security);
+		this.security = security;
 	}
 	protected Security getSecurity() {
 		return this.security;
 	}
 
 	protected void setLeistung(Leistung leistung){
-		security.benutzeLeistung(leistung);
+		security.setLeistung(leistung);
 	}
 
 	
 	protected void setSkin(Skin skin) {
-		this.benutzeSkin(skin);
+		this.skin = skin;
 	}
 	protected Skin getSkin() {
 		return skin;
