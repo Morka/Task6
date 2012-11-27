@@ -23,16 +23,18 @@ public class RoboShop {
 		Android delivery;
 		if((delivery = findAndroid(android.getSNumber())) == null){
 			delivery = android.deliverAndroid();
-		}else{
+			
+			if(delivery != null){
+				map.put(delivery.getSNumber(), delivery);
+				stack.add(delivery);
+			}
+			else
+				System.out.println("Fehler bei Androidauslieferung");
+		}
+		else{
 			delivery.changeAndroid(android.deliverAndroid());
 			delivery = delivery.deliverAndroid();
 		}
-		if(delivery != null){
-			map.put(delivery.getSNumber(), delivery);
-			stack.add(delivery);
-		}
-		else
-			System.out.println("Fehler bei Androidauslieferung");
 	}
 	
 	private Android findAndroid(int snr){
