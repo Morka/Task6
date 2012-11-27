@@ -4,8 +4,8 @@
 
 public class G_Objektbewacher extends Guardian {
 	
-	public G_Objektbewacher(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public G_Objektbewacher(int snr, Skin skin, Software software,  Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -19,7 +19,7 @@ public class G_Objektbewacher extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Objektbewacher, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
+		ret = "Objektbewacher, Nr: " + super.toString();
 		return ret;
 	}
 	

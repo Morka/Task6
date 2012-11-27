@@ -3,13 +3,11 @@
  */
 
 public abstract class Leistung{
-	abstract void vonHilfskraftBenutzt(HilfskraftSoftware software);
-	abstract void vonGesellschafterBenutzt(GesellschafterSoftware software);
-	abstract void vonBauarbeiterBenutzt(BauarbeiterSoftware software);
-	abstract void vonServicetechnikerBenutzt(ServiceTechnikerSoftware software);
-	abstract void vonTransportarbeiterBenutzt(TransportarbeiterSoftware software);
-	abstract void vonObjektbewacherBenutzt(ObjektbewacherSoftware software);
-	abstract void vonLeibwaechterBenutzt(LeibwaechterSoftware software);
-	abstract void vonKaempferBenutzt(KaempferSoftware software);
+	public abstract void vonSecurityStufe1Benutzt(SecurityStufe1 security);
+	public abstract void vonSecurityStufe2Benutzt(SecurityStufe2 security);
+	public abstract void vonSecurityStufe3Benutzt(SecurityStufe3 security);
+	public abstract void vonSecurityStufe4Benutzt(SecurityStufe4 security);
+	public abstract void vonSecurityStufe5Benutzt(SecurityStufe5 security);
+	
 	public abstract String toString();
 }

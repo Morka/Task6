@@ -3,8 +3,8 @@
  */
 
 public class B_Hilfskraft extends Bediener {
-	public B_Hilfskraft(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public B_Hilfskraft(int snr, Skin skin, Software software, Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,7 +18,7 @@ public class B_Hilfskraft extends Bediener {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Hilfskraft, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
+		ret = "Hilfskraft, Nr: " + super.toString();
 		return ret;
 	}
 

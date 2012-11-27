@@ -4,8 +4,8 @@
 
 public class G_Leibwaechter extends Guardian {
 
-	public G_Leibwaechter(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public G_Leibwaechter(int snr, Skin skin, Software software, Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,7 +19,7 @@ public class G_Leibwaechter extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Leibwaechter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
+		ret = "Leibwaechter, Nr: " + super.toString();
 		return ret;
 	}
 

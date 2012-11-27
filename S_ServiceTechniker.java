@@ -4,8 +4,8 @@
 
 public class S_ServiceTechniker extends Schwerarbeiter {
 
-	public S_ServiceTechniker(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public S_ServiceTechniker(int snr, Skin skin, Software software,  Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,7 +19,7 @@ public class S_ServiceTechniker extends Schwerarbeiter {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Servicetechniker, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
+		ret = "Servicetechniker, Nr: " + super.toString();
 		return ret;
 	}
 

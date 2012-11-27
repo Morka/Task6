@@ -1,11 +1,9 @@
 /**
- * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
- */
- 
+* @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+*/
+
 public class SecurityStufe4 extends Security{
-	public String toString(){
-		return "Security Stufe 4";
-	}
+	
 	
 	public void vonBauarbeiterBenutzt(S_Bauarbeiter android){
 		android.setSecurity(this);
@@ -32,5 +30,13 @@ public class SecurityStufe4 extends Security{
 	
 	public void vonKaempferBenutzt(G_Kaempfer android){
 		android.setSecurity(null);
+	}
+	
+	public void benutzeLeistung(Leistung leistung){
+		leistung.vonSecurityStufe4Benutzt(this);
+	}
+	
+	public String toString(){
+		return "Security Stufe 4";
 	}
 }

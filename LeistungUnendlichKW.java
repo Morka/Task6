@@ -3,36 +3,26 @@
 */
 
 public class LeistungUnendlichKW extends Leistung{
-	public void vonHilfskraftBenutzt(HilfskraftSoftware software){
+	
+	public void vonSecurityStufe1Benutzt(SecurityStufe1 security){
+		security.setLeistung(null);
+	}
+	
+	public void vonSecurityStufe2Benutzt(SecurityStufe2 security) {
+		security.setLeistung(null);
+	}
+	
+	public void vonSecurityStufe3Benutzt(SecurityStufe3 security) {
+		security.setLeistung(null);
+	}
+	
+	public void vonSecurityStufe4Benutzt(SecurityStufe4 security) {
+		security.setLeistung(null);
 
 	}
 	
-	public void vonGesellschafterBenutzt(GesellschafterSoftware software) {
-
-	}
-	
-	public void vonBauarbeiterBenutzt(BauarbeiterSoftware software) {
-		
-	}
-	
-	public void vonServicetechnikerBenutzt(ServiceTechnikerSoftware software) {
-		
-	}
-	
-	public void vonTransportarbeiterBenutzt(TransportarbeiterSoftware software) {
-		
-	}
-	
-	public void vonObjektbewacherBenutzt(ObjektbewacherSoftware software) {
-		
-	}
-	
-	public void vonLeibwaechterBenutzt(LeibwaechterSoftware software) {
-		
-	}
-	
-	public void vonKaempferBenutzt(KaempferSoftware software) {
-		software.setLeistung(this);
+	public void vonSecurityStufe5Benutzt(SecurityStufe5 security) {
+		security.setLeistung(this);
 	}
 	
 	public String toString(){

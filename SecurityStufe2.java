@@ -3,10 +3,6 @@
  */
  
 public class SecurityStufe2 extends Security{
-	public String toString(){
-		return "Security Stufe 2";
-	}
-	
 	public void vonHilfskraftBenutzt(B_Hilfskraft android){
 		android.setSecurity(this);
 	}
@@ -30,5 +26,13 @@ public class SecurityStufe2 extends Security{
 	}	
 	public void vonKaempferBenutzt(G_Kaempfer android){
 		android.setSecurity(null);
+	}
+	
+	public void benutzeLeistung(Leistung leistung){
+		leistung.vonSecurityStufe2Benutzt(this);
+	}
+	
+	public String toString(){
+		return "Security Stufe 2";
 	}
 }

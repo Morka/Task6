@@ -4,8 +4,8 @@
 
 public class G_Kaempfer extends Guardian {
 
-	public G_Kaempfer(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public G_Kaempfer(int snr, Skin skin, Software software,  Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -20,7 +20,7 @@ public class G_Kaempfer extends Guardian {
 	
 	public String toString() {
 		String ret = "";
-		ret = "Kaempfer, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
+		ret = "Kaempfer, Nr: "  + super.toString();
 		return ret;
 	}
 

@@ -3,9 +3,7 @@
  */
  
 public class SecurityStufe5 extends Security{
-	public String toString(){
-		return "Security Stufe 5";
-	}
+	
 	public void vonKaempferBenutzt(G_Kaempfer android){
 		android.setSecurity(this);
 	}
@@ -30,5 +28,13 @@ public class SecurityStufe5 extends Security{
 	}
 	public void vonLeibwaechterBenutzt(G_Leibwaechter android){
 		android.setSecurity(null);
+	}
+	
+	public void benutzeLeistung(Leistung leistung){
+		leistung.vonSecurityStufe5Benutzt(this);
+	}
+	
+	public String toString(){
+		return "Security Stufe 5";
 	}
 }

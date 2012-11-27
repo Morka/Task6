@@ -3,8 +3,8 @@
  */
 
 public class B_Gesellschafter extends Bediener {
-	public B_Gesellschafter(int snr, Skin skin, Software software) {
-		super(snr, skin, software);
+	public B_Gesellschafter(int snr, Skin skin, Software software,  Security security, Leistung leistung) {
+		super(snr, skin, software, security, leistung);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -16,16 +16,16 @@ public class B_Gesellschafter extends Bediener {
 	public void benutzeSecurity(Security security){
 		security.vonGesellschafterBenutzt(this);
 	}
-	
-	public String toString() {
-		String ret = "";
-		ret = "Gesellschafter, Nr: " + getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware();
-		return ret;
-	}
 
 	@Override
 	public void benutzeSkin(Skin skin) {
 		skin.vonGesellschafterBenutzt(this);
 		
+	}
+	
+	public String toString() {
+		String ret = "";
+		ret = "Gesellschafter, Nr: " + super.toString();
+		return ret;
 	}
 }

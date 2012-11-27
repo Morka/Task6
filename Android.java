@@ -10,22 +10,22 @@ public abstract class Android {
 	private final int snr;
 	private Skin skin;
 	private Software software;
-	private Leistung leistung;
+
 	private Security security;
 	
-	public Android(int snr, Skin skin, Software software) {
+	public Android(int snr, Skin skin, Software software, Security security, Leistung leistung) {
 		this.snr = snr;
 		
 		this.benutzeSoftware(software);
 		this.benutzeSkin(skin);
-		//this.benutzeSecurity(security);
-		//this.benutzeLeistung(leistung);
+		this.benutzeSecurity(security);
+		security.benutzeLeistung(leistung);
 		
 	}
 	
 	public Android deliverAndroid() {
 		
-		if((getSoftware() != null) && (getSkin() != null))  //  && (getLeistung() != null )  && (getSecurity() != null)
+		if((getSoftware() != null) && (getSkin() != null)  && (security.getLeistung() != null )  && (getSecurity() != null))
 		{
 				stack.add(this);
 				return this;
@@ -48,13 +48,11 @@ public abstract class Android {
 	protected Security getSecurity() {
 		return this.security;
 	}
-
+/*
 	protected void setLeistung(Leistung leistung){
 		this.leistung = leistung;
 	}
-	protected Leistung getLeistung() {
-		return this.leistung;
-	}
+*/
 	
 	protected void setSkin(Skin skin) {
 		this.skin = skin;
@@ -74,9 +72,10 @@ public abstract class Android {
 		return stack.iterator();
 	}
 	
-	public abstract String toString();
+	
 	public abstract void benutzeSoftware(Software software);
 	public abstract void benutzeSecurity(Security security);
 	public abstract void benutzeSkin(Skin skin);
-	//public abstract void benutzeLeistung(Leistung leistung);
+	
+	public abstract String toString();
 }

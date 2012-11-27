@@ -3,7 +3,8 @@
  */
 
 public abstract class Security {	
-	public abstract String toString();
+	private Leistung leistung;
+	
 	public abstract void vonHilfskraftBenutzt(B_Hilfskraft android);
 	public abstract void vonGesellschafterBenutzt(B_Gesellschafter android);
 	public abstract void vonBauarbeiterBenutzt(S_Bauarbeiter android);
@@ -12,4 +13,16 @@ public abstract class Security {
 	public abstract void vonObjektbewacherBenutzt(G_Objektbewacher android);
 	public abstract void vonLeibwaechterBenutzt(G_Leibwaechter android);
 	public abstract void vonKaempferBenutzt(G_Kaempfer android);
+	
+	public abstract void benutzeLeistung(Leistung leistung);
+	
+	public void setLeistung(Leistung leistung){
+		this.leistung = leistung;
+	}
+	
+	public Leistung getLeistung(){
+		return leistung;
+	}
+	
+	public abstract String toString();
 }
