@@ -114,6 +114,15 @@ public class Test {
 		System.out.println(shop.find(15));
 		System.out.println(shop.find(16));
 		
+		Software newTransportSoft = new TransportarbeiterSoftware();
 		
+		Android newA15 = new S_Transportarbeiter(15, highDensitySkin, newTransportSoft, sec3, power5);
+		
+		shop.insert(newA15);
+		
+		System.out.println("new: " + 	shop.find(15));
+		
+		
+
 	}
 }

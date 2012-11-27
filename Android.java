@@ -20,6 +20,7 @@ public abstract class Android {
 		
 	}
 	
+	
 	public Android deliverAndroid() {
 		
 		if((getSoftware() != null) && (getSkin() != null)  && (security.getLeistung() != null )  && (getSecurity() != null))
@@ -33,7 +34,7 @@ public abstract class Android {
 	
 	public Android changeAndroid(Android android){
 		if(android != null){
-			android.changeTyp(this);
+			this.changeTyp(android);
 			this.setSkin(android.getSkin());
 			this.getSecurity().setLeistung(android.getSecurity().getLeistung());
 		}

@@ -33,7 +33,9 @@ public class RoboShop {
 		}
 		else{
 			delivery.changeAndroid(android.deliverAndroid());
+			System.out.println("Test in insert: "+ android);
 			delivery = delivery.deliverAndroid();
+			stack.add(delivery);
 		}
 	}
 	
