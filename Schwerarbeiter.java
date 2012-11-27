@@ -10,8 +10,6 @@ public abstract class Schwerarbeiter extends Android {
 	}
 	
 	public String toString(){
-		String ret = "";
-		ret = getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware() + " , Security " + getSecurity() + " , Leistung " + getSecurity().getLeistung();
-		return ret;
+		return super.toString();
 	}
 }

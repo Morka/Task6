@@ -35,7 +35,7 @@ public abstract class Android {
 	}
 			
 	protected void setSoftware(Software software) {
-		this.software = software;
+		this.benutzeSoftware(software);
 	}
 	protected Software getSoftware() {
 		return software;
@@ -43,30 +43,28 @@ public abstract class Android {
 	
 	
 	protected void setSecurity(Security security){
-		this.security = security;
+		this.benutzeSecurity(security);
 	}
 	protected Security getSecurity() {
 		return this.security;
 	}
-/*
+
 	protected void setLeistung(Leistung leistung){
-		this.leistung = leistung;
+		security.benutzeLeistung(leistung);
 	}
-*/
+
 	
 	protected void setSkin(Skin skin) {
-		this.skin = skin;
+		this.benutzeSkin(skin);
 	}
-	
-
+	protected Skin getSkin() {
+		return skin;
+	}
 	
 	protected int getSNumber() {
 		return snr;
 	}
 	
-	protected Skin getSkin() {
-		return skin;
-	}
 	
 	public Iterator<Android> iterator() {
 		return stack.iterator();
@@ -77,5 +75,9 @@ public abstract class Android {
 	public abstract void benutzeSecurity(Security security);
 	public abstract void benutzeSkin(Skin skin);
 	
-	public abstract String toString();
+	public String toString(){
+		String ret = "";
+		ret = getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware() + " , Security " + getSecurity() + " , Leistung " + getSecurity().getLeistung();
+		return ret;
+	}
 }

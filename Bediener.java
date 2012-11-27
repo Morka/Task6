@@ -9,8 +9,6 @@ public abstract class Bediener extends Android {
 		// TODO Auto-generated constructor stub
 	}
 	public String toString(){
-		String ret = "";
-		ret = getSNumber() + " , Skin: " + getSkin() + " , Software: " + getSoftware() + " , Security " + getSecurity() + " , Leistung " + getSecurity().getLeistung();
-		return ret;
+		return super.toString();
 	}
 }
