@@ -4,7 +4,7 @@
 
 public abstract class Security {	
 	private Leistung leistung;
-	
+	//Postcondition: if the appropriate method makes call to android.setSecurity(this), Security is  this, otherwise Security is null
 	public abstract void vonHilfskraftBenutzt(B_Hilfskraft android);
 	public abstract void vonGesellschafterBenutzt(B_Gesellschafter android);
 	public abstract void vonBauarbeiterBenutzt(S_Bauarbeiter android);
@@ -16,6 +16,7 @@ public abstract class Security {
 	
 	public abstract void benutzeLeistung(Leistung leistung);
 	
+	//Postcondition: this.leistung is set to parameter leistung
 	public void setLeistung(Leistung leistung){
 		this.leistung = leistung;
 	}
@@ -24,5 +25,6 @@ public abstract class Security {
 		return leistung;
 	}
 	
+	//Postcondition: returns a descriptive String
 	public abstract String toString();
 }

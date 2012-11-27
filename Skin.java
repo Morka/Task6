@@ -2,7 +2,8 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public abstract class Skin {//gehört abstract
+public abstract class Skin {
+	//Postcondition: if the appropriate method makes call to android.setSkin(this), Skin is  this, otherwise Skin is null
 	public abstract void vonHilfskraftBenutzt(B_Hilfskraft android);
 	public abstract void vonGesellschafterBenutzt(B_Gesellschafter android);
 	public abstract void vonBauarbeiterBenutzt(S_Bauarbeiter android);
@@ -11,5 +12,6 @@ public abstract class Skin {//gehört abstract
 	public abstract void vonObjektbewacherBenutzt(G_Objektbewacher android);
 	public abstract void vonLeibwaechterBenutzt(G_Leibwaechter android);
 	public abstract void vonKaempferBenutzt(G_Kaempfer android);
+	//Postcondition: returns a descriptive String
 	public abstract String toString();
 }
