@@ -12,6 +12,7 @@ public class Test {
 	public static void main(String[] args) {
 		RoboShop shop = new RoboShop();	
 		
+		//Initialize android parts
 		Software helpSoft = new HilfskraftSoftware();
 		Software communitySoft = new GesellschafterSoftware();
 		Software fightSoft = new KaempferSoftware();
@@ -36,6 +37,7 @@ public class Test {
 		Leistung power10 = new Leistung10KW();
 		Leistung powerInf = new LeistungUnendlichKW();
 		
+		//Initialize all androids
 		Android a1 = new B_Hilfskraft(1, touchSkin, helpSoft, sec2, power1);
 		Android a2 = new B_Gesellschafter(2, touchSkin, communitySoft, sec1, power1);
 		Android a3 = new G_Kaempfer(3, armoredSkin, fightSoft, sec5, powerInf);
@@ -54,10 +56,16 @@ public class Test {
 		S_ServiceTechniker a15 = new S_ServiceTechniker(15, highDensitySkin, serviceSoft, sec3, power5);
 		S_Transportarbeiter a16 = new S_Transportarbeiter(16, highDensitySkin, cargoSoft, sec4, power10);
 		
-		//B_Gesellschafter ges1 = new B_Gesellschafter(4,new BeruehrungssensitivSkin(), communitySoft, sec1, power1);
-		//B_Hilfskraft hk1 = new B_Hilfskraft(5,new BeruehrungssensitivSkin(), helpSoft, sec1, power1);
-		//Android a4 = new G_Kaempfer(6, new GepanzerteSkin(), s5, sec5, l4); 
+		//Initiliaze a bad fighter unit
+		G_Kaempfer badFighter = new G_Kaempfer(17, touchSkin, serviceSoft, sec3, power5);
 		
+		//Update unit 16 with proper settings
+		S_Transportarbeiter newA16 = new S_Transportarbeiter(16, highDensitySkin, cargoSoft, sec3, power5); //new Unit 16 - OK!
+		
+		//Update unit 8 with false settings
+		//Android newA8 = new S_Transportarbeiter(8, highDensitySkin, cargoSoft, sec3, power10);//new Unit 8 - BAD!
+		
+		//Add all androids into the RoboShop list
 		shop.insert(a1);
 		shop.insert(a2);
 		shop.insert(a3);
@@ -74,11 +82,11 @@ public class Test {
 		shop.insert(a14);
 		shop.insert(a15);
 		shop.insert(a16);
-		//shop.insert(ges1);
-		//shop.insert(hk1);
-		//shop.insert(a4);
+		shop.insert(badFighter);
+		shop.insert(newA16);
+		//shop.insert(newA8);
 		
-
+		//Print all androids in the list
 		System.out.println(shop.find(1));
 		System.out.println(shop.find(2));
 		System.out.println(shop.find(3));
