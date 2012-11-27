@@ -16,6 +16,10 @@ public class B_Hilfskraft extends Bediener {
 		security.vonHilfskraftBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufHilfskraftWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Hilfskraft, Nr: " + super.toString();

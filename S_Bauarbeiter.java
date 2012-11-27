@@ -17,6 +17,10 @@ public class S_Bauarbeiter extends Schwerarbeiter {
 		security.vonBauarbeiterBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufBauarbeiterWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Bauarbeiter, Nr: " + super.toString();

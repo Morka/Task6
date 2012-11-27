@@ -17,6 +17,10 @@ public class G_Objektbewacher extends Guardian {
 		security.vonObjektbewacherBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufObjektbewacherWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Objektbewacher, Nr: " + super.toString();

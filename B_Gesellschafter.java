@@ -16,7 +16,11 @@ public class B_Gesellschafter extends Bediener {
 	public void benutzeSecurity(Security security){
 		security.vonGesellschafterBenutzt(this);
 	}
-
+	
+	public void changeTyp(Android android){
+		android.aufGesellschafterWechseln(this);
+	}
+	
 	@Override
 	public void benutzeSkin(Skin skin) {
 		skin.vonGesellschafterBenutzt(this);

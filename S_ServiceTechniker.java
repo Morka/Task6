@@ -17,6 +17,10 @@ public class S_ServiceTechniker extends Schwerarbeiter {
 		security.vonServiceTechnikerBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufServiceTechnikerWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Servicetechniker, Nr: " + super.toString();

@@ -18,6 +18,10 @@ public class G_Kaempfer extends Guardian {
 		security.vonKaempferBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufKaempferWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Kaempfer, Nr: "  + super.toString();

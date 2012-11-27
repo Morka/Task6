@@ -32,6 +32,7 @@ public abstract class Android {
 	
 	public Android changeAndroid(Android android){
 		if(android != null){
+			android.changeTyp(this);
 			this.setSkin(android.getSkin());
 			this.getSecurity().setLeistung(android.getSecurity().getLeistung());
 		}

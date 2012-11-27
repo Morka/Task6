@@ -17,6 +17,10 @@ public class G_Leibwaechter extends Guardian {
 		security.vonLeibwaechterBenutzt(this);
 	}
 	
+	public void changeTyp(Android android){
+		android.aufLeibwaechterWechseln(this);
+	}
+	
 	public String toString() {
 		String ret = "";
 		ret = "Leibwaechter, Nr: " + super.toString();
