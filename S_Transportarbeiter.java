@@ -16,11 +16,7 @@ public class S_Transportarbeiter extends Schwerarbeiter {
 	public void benutzeSecurity(Security security){
 		security.vonTransportarbeiterBenutzt(this);
 	}
-	
-	public void changeTyp(Android android){
-		android.aufTransportarbeiterWechseln(this);
-	}
-	
+
 	public String toString() {
 		String ret = "";
 		ret = "Transportarbeiter, Nr: " + super.toString();

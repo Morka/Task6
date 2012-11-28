@@ -96,6 +96,27 @@ public class Test {
 		shop.insert(newA16);
 		shop.insert(newA8);
 		
+		/*
+		Expected output:
+		Fehler bei Androidauslieferung
+		Hilfskraft, Nr: 1 , Skin: Beruehrungssensitive Haut , Software: Hilfskraft-Software , Security Security Stufe 2 , Leistung 1KW Leistung
+		Gesellschafter, Nr: 2 , Skin: Beruehrungssensitive Haut , Software: Gesellschafter-Software , Security Security Stufe 1 , Leistung 1KW Leistung
+		Kaempfer, Nr: 3 , Skin: Gepanzerte Haut , Software: Kaempfer-Software , Security Security Stufe 5 , Leistung Unendlich KW Leistung
+		Leibwaechter, Nr: 4 , Skin: Gepanzerte Haut , Software: Leibwaechter-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		Objektbewacher, Nr: 5 , Skin: Gepanzerte Haut , Software: Objektbewacher-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		Bauarbeiter, Nr: 6 , Skin: Hochfeste Haut , Software: Bauarbeiter-Software , Security Security Stufe 3 , Leistung 5KW Leistung
+		Servicetechniker, Nr: 7 , Skin: Hochfeste Haut , Software: Servicetechniker-Software , Security Security Stufe 3 , Leistung 5KW Leistung
+		Transportarbeiter, Nr: 8 , Skin: Hochfeste Haut , Software: Transportarbeiter-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		Hilfskraft, Nr: 9 , Skin: Beruehrungssensitive Haut , Software: Hilfskraft-Software , Security Security Stufe 2 , Leistung 1KW Leistung
+		Gesellschafter, Nr: 10 , Skin: Beruehrungssensitive Haut , Software: Gesellschafter-Software , Security Security Stufe 1 , Leistung 1KW Leistung
+		Kaempfer, Nr: 11 , Skin: Gepanzerte Haut , Software: Kaempfer-Software , Security Security Stufe 5 , Leistung Unendlich KW Leistung
+		Leibwaechter, Nr: 12 , Skin: Gepanzerte Haut , Software: Leibwaechter-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		Objektbewacher, Nr: 13 , Skin: Gepanzerte Haut , Software: Objektbewacher-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		Bauarbeiter, Nr: 14 , Skin: Hochfeste Haut , Software: Bauarbeiter-Software , Security Security Stufe 3 , Leistung 5KW Leistung
+		Servicetechniker, Nr: 15 , Skin: Hochfeste Haut , Software: Servicetechniker-Software , Security Security Stufe 3 , Leistung 5KW Leistung
+		Transportarbeiter, Nr: 16 , Skin: Hochfeste Haut , Software: Transportarbeiter-Software , Security Security Stufe 4 , Leistung 5KW Leistung
+		*/
+		
 		//Print all androids in the list
 		System.out.println(shop.find(1));
 		System.out.println(shop.find(2));
@@ -112,15 +133,8 @@ public class Test {
 		System.out.println(shop.find(13));
 		System.out.println(shop.find(14));
 		System.out.println(shop.find(15));
+
 		System.out.println(shop.find(16));
-		
-		Software newTransportSoft = new TransportarbeiterSoftware();
-		
-		Android newA15 = new S_Transportarbeiter(15, highDensitySkin, newTransportSoft, sec3, power5);
-		
-		shop.insert(newA15);
-		
-		System.out.println("new: " + 	shop.find(15));
 		
 		
 

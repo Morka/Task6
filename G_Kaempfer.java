@@ -17,10 +17,7 @@ public class G_Kaempfer extends Guardian {
 	public void benutzeSecurity(Security security){
 		security.vonKaempferBenutzt(this);
 	}
-	
-	public void changeTyp(Android android){
-		android.aufKaempferWechseln(this);
-	}
+
 	
 	public String toString() {
 		String ret = "";
