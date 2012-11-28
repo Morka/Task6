@@ -57,7 +57,6 @@ public class RoboShop {
 	 * finds Android with given snr if existing otherwise error notice
 	 *
 	 * @param snr
-	 *Ê
 	 * @return string that describes the android or error notice
 	 */
 	//postcondition: descirptive string is given back if found, or an error notice
