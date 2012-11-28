@@ -2,7 +2,7 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public class BeruehrungssensitivSkin extends Skin {//gehört abstract
+public class BeruehrungssensitivSkin extends Skin {
 
 	@Override
 	public String toString() {

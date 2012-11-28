@@ -120,8 +120,37 @@ public abstract class Android {
 	protected int getSNumber() {
 		return snr;
 	}
+	/**
+	 * benutzeSoftware is used for dynamicBinding. It calls the right method
+	 * from software
+	 *
+	 * @param software
+	 *
+	 */
+	//precondition: software != null
+	//postcondition: the right method of Software is invoked
 	public abstract void benutzeSoftware(Software software);
+	
+	/**
+	 * benutzeSecurity is also used for dynamicBinding. It calls the right method
+	 * from Security
+	 *
+	 * @param security
+	 *
+	 */
+	//precondition: security != null
+	//postcondition: the right method of Security is invoked
 	public abstract void benutzeSecurity(Security security);
+	
+	/**
+	 * benutzeSkin is used for dynamicBinding, too. It calls the right method
+	 * from Skin
+	 *
+	 * @param skin
+	 *
+	 */
+	//precondition: skin != null
+	//postcondition: the right method of Skin is invoked
 	public abstract void benutzeSkin(Skin skin);
 	
 

@@ -2,7 +2,7 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public class GepanzerteSkin extends Skin {//gehört abstract
+public class GepanzerteSkin extends Skin {
 		
 	public String toString() {
 		return "Gepanzerte Haut";

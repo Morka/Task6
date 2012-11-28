@@ -2,7 +2,7 @@
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
-public class HochfesteSkin extends Skin {//gehört abstract
+public class HochfesteSkin extends Skin {
 		
 	public String toString() {
 		return "Hochfeste Haut";

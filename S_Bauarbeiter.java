@@ -9,6 +9,7 @@ public class S_Bauarbeiter extends Schwerarbeiter {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 	public void benutzeSoftware(Software software) {
 		software.vonBauarbeiterBenutzt(this);
 	}
